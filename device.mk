@@ -26,10 +26,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Inherit from tone-common
 $(call inherit-product, device/sony/tone-common/tone.mk)
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
@@ -38,10 +34,6 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     Snap
-
-# Consumer IR
-PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-service.sony_8996
 
 # Device init scripts
 PRODUCT_PACKAGES += \
