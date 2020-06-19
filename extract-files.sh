@@ -19,10 +19,10 @@
 set -e
 
 # Required!
-export DEVICE=gemini
-export DEVICE_COMMON=msm8996-common
-export VENDOR=xiaomi
+export DEVICE=keyaki
+export DEVICE_COMMON=tone-common
+export VENDOR=sony
 
-export DEVICE_BRINGUP_YEAR=2016
+export DEVICE_BRINGUP_YEAR=2020
 
 ./../../$VENDOR/$DEVICE_COMMON/extract-files.sh $@

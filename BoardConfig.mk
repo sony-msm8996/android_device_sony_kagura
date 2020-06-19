@@ -15,13 +15,13 @@
 # limitations under the License.
 #
 
-# Inherit from common msm8996-common
--include device/xiaomi/msm8996-common/BoardConfigCommon.mk
+# Inherit from common tone-common
+-include device/sony/tone-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/gemini
+DEVICE_PATH := device/sony/keyaki
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := gemini
+TARGET_OTA_ASSERT_DEVICE := keyaki,keyaki_dsds,G8231,G8232
 
 # Board
 TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
@@ -30,7 +30,7 @@ TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := gemini_defconfig
+TARGET_KERNEL_CONFIG := tone_keyaki_defconfig
 
 # NFC
 NXP_CHIP_TYPE := 2
@@ -39,4 +39,4 @@ NXP_CHIP_TYPE := 2
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Inherit from the proprietary version
--include vendor/xiaomi/gemini/BoardConfigVendor.mk
+-include vendor/sony/keyaki/BoardConfigVendor.mk

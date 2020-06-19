@@ -16,15 +16,15 @@
 #
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/gemini/gemini-vendor.mk)
+$(call inherit-product, vendor/sony/keyaki/keyaki-vendor.mk)
 
 # Local overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-# Inherit from msm8996-common
-$(call inherit-product, device/xiaomi/msm8996-common/msm8996.mk)
+# Inherit from tone-common
+$(call inherit-product, device/sony/tone-common/tone.mk)
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -45,7 +45,7 @@ PRODUCT_PACKAGES += \
 
 # Consumer IR
 PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-service.xiaomi_8996
+    android.hardware.ir@1.0-service.sony_8996
 
 # Device init scripts
 PRODUCT_PACKAGES += \

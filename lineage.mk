@@ -19,27 +19,27 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from gemini device
-$(call inherit-product, device/xiaomi/gemini/device.mk)
+# Inherit from keyaki device
+$(call inherit-product, device/sony/keyaki/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_gemini
-PRODUCT_DEVICE := gemini
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI 5
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_NAME := lineage_keyaki
+PRODUCT_DEVICE := keyaki
+PRODUCT_BRAND := Sony
+PRODUCT_MODEL := Xperia XZs
+PRODUCT_MANUFACTURER := Sony
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-sony
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="gemini" \
-    PRODUCT_NAME="gemini" \
-    PRIVATE_BUILD_DESC="gemini-user 8.0.0 OPR1.170623.032 V9.6.1.0.OAAMIFD release-keys"
+    TARGET_DEVICE="keyaki_dsds" \
+    PRODUCT_NAME="keyaki_dsds" \
+    PRIVATE_BUILD_DESC="keyaki_dsds-user 8.0.0 OPR1.170623.026 1 dev-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "Xiaomi/gemini/gemini:8.0.0/OPR1.170623.032/V9.6.1.0.OAAMIFD:user/release-keys"
+BUILD_FINGERPRINT := "Sony/keyaki_dsds/keyaki_dsds:8.0.0/OPR1.170623.026/1:user/dev-keys"
 
-TARGET_VENDOR := Xiaomi
+TARGET_VENDOR := Sony
