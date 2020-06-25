@@ -2,3 +2,10 @@
 persist.qfp=false
 ro.hardware.fingerprint=fpc
 sys.fpc.tu.disabled=0
+
+# SEMC props
+ro.semc.product.model=G8232
+ro.semc.ms_type_id=PM-1021-BV
+ro.semc.product.name=Xperia XZs
+ro.semc.product.device=G82
+
