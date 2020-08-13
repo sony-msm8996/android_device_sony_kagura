@@ -4,8 +4,10 @@ ro.hardware.fingerprint=fpc
 sys.fpc.tu.disabled=0
 
 # SEMC props
-ro.semc.product.model=G8232
-ro.semc.ms_type_id=PM-1021-BV
-ro.semc.product.name=Xperia XZs
-ro.semc.product.device=G82
+ro.semc.product.model=F8331
+ro.semc.ms_type_id=PM-0980-BV
+ro.semc.product.name=Xperia XZ
+ro.semc.product.device=F83
 
+# USB
+ro.usb.pid_suffix=1E7

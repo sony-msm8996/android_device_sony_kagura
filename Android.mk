@@ -26,6 +26,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),keyaki)
+ifeq ($(TARGET_DEVICE),kagura)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

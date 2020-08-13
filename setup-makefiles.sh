@@ -19,7 +19,7 @@
 set -e
 
 # Required!
-export DEVICE=keyaki
+export DEVICE=kagura
 export DEVICE_COMMON=tone-common
 export VENDOR=sony
 

@@ -18,19 +18,16 @@
 # Inherit from common tone-common
 -include device/sony/tone-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/sony/keyaki
+DEVICE_PATH := device/sony/kagura
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := keyaki,keyaki_dsds,G8231,G8232
-
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+TARGET_OTA_ASSERT_DEVICE := kagura,kagura_dsds,F8331,F8332
 
 # Kernel
-TARGET_KERNEL_CONFIG := tone_keyaki_defconfig
+TARGET_KERNEL_CONFIG := tone_kagura_defconfig
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Inherit from the proprietary version
--include vendor/sony/keyaki/BoardConfigVendor.mk
+-include vendor/sony/kagura/BoardConfigVendor.mk
