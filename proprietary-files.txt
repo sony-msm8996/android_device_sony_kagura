@@ -1254,22 +1254,22 @@ vendor/lib/libsony_fooddetect.so
 vendor/lib/libsony_naruto.so
 
 # Fingerprint
-etc/firmware/tzfingerprint.b00
-etc/firmware/tzfingerprint.b01
-etc/firmware/tzfingerprint.b02
-etc/firmware/tzfingerprint.b03
-etc/firmware/tzfingerprint.b04
-etc/firmware/tzfingerprint.b05
-etc/firmware/tzfingerprint.b06
-etc/firmware/tzfingerprint.mdt
-lib64/hw/fingerprint.msm8996.so
-lib64/libcom_fingerprints_service.so
-lib64/libfpc_oem.so
-lib64/lib_fpc_tac_shared.so
-lib/hw/fingerprint.msm8996.so
-lib/libcom_fingerprints_service.so
-lib/libfpc_oem.so
-lib/lib_fpc_tac_shared.so
+etc/firmware/tzfingerprint.b00:vendor/etc/firmware/tzfingerprint.b00
+etc/firmware/tzfingerprint.b01:vendor/etc/firmware/tzfingerprint.b01
+etc/firmware/tzfingerprint.b02:vendor/etc/firmware/tzfingerprint.b02
+etc/firmware/tzfingerprint.b03:vendor/etc/firmware/tzfingerprint.b03
+etc/firmware/tzfingerprint.b04:vendor/etc/firmware/tzfingerprint.b04
+etc/firmware/tzfingerprint.b05:vendor/etc/firmware/tzfingerprint.b05
+etc/firmware/tzfingerprint.b06:vendor/etc/firmware/tzfingerprint.b06
+etc/firmware/tzfingerprint.mdt:vendor/etc/firmware/tzfingerprint.mdt
+lib64/hw/fingerprint.msm8996.so:vendor/lib64/hw/fingerprint.msm8996.so
+lib64/libcom_fingerprints_service.so:vendor/lib64/libcom_fingerprints_service.so
+lib64/libfpc_oem.so:vendor/lib64/libfpc_oem.so
+lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so
+lib/hw/fingerprint.msm8996.so:vendor/lib/hw/fingerprint.msm8996.so
+lib/libcom_fingerprints_service.so:vendor/lib/libcom_fingerprints_service.so
+lib/libfpc_oem.so:vendor/lib/libfpc_oem.so
+lib/lib_fpc_tac_shared.so:vendor/lib/lib_fpc_tac_shared.so
 
 # NFC firmware
 lib64/hw/libpn547_fw.so:vendor/firmware/libpn547_fw.so
@@ -1279,6 +1279,6 @@ vendor/etc/sensors/sensor_def_qcomdev.conf
 vendor/etc/sensors/hals.conf
 
 # Touchscreen firmware
-etc/firmware/touch_module_id_0xb0.img
-etc/firmware/touch_module_id_0xb1.img
-etc/firmware/touch_module_id_0xb2.img
+etc/firmware/touch_module_id_0xb0.img:vendor/etc/firmware/touch_module_id_0xb0.img
+etc/firmware/touch_module_id_0xb1.img:vendor/etc/firmware/touch_module_id_0xb1.img
+etc/firmware/touch_module_id_0xb2.img:vendor/etc/firmware/touch_module_id_0xb2.img
